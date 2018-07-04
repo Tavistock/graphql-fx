@@ -11,12 +11,12 @@ either import and use the builtin `:graphql-xhrio` or make your own fx.
 ``` clojure
 ;; to use the bultin
 (ns myns.core
-  (:requre [tavistock.graphql-fx]))
+  (:require [tavistock.graphql-fx]))
   ;; ... use {:graphql-xhrio {:query {:venia/queries [...]}}} as an effect
 
 ;; or use the underlying fn to make your own fx
 (ns myns.core
-  (:requre [tavistock.graphql-fx :refer [graph-effect]
+  (:require [tavistock.graphql-fx :refer [graph-effect]
            [re-frame.core :refer [reg-fx]]))
 
 (defn new-fx [request]
