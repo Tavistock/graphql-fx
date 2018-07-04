@@ -4,7 +4,9 @@
 
 A library for making Graphql request from a clojure re-frame app. Uses a similar interface as [re-frame-http-fx](https://github.com/Day8/re-frame-http-fx/) but accepts graphql queries in the [venia](https://github.com/Vincit/venia) format. Converts from the camelCase of GraphqQL to kebab-case for free or specify your own transfroms.
 
-usage: either import and use the builtin `:graphql-xhrio` or make your own fx.
+## Usage
+
+either import and use the builtin `:graphql-xhrio` or make your own fx.
 
 ``` clojure
 ;; to use the bultin
